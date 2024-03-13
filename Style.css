@@ -20,7 +20,7 @@
 
 }
 html{
-    background-color: #f3e5d8;
+    background-color: var(--Eggshell);
 }
 
 body{
@@ -34,12 +34,16 @@ body{
     place-items: center;
 
 }
-
+hr{
+    
+    border-top: 1px solid var(--LightGrey);
+}
 .WhiteContainer{
     margin-top: 15vh;
     background-color: var(--White) ;
     
-    width: 38vw;
+    /* width: 46vw; */
+    width: 700px;
     border-radius: 10px;
     display: grid;
     place-items: center;
@@ -71,8 +75,47 @@ color: var(--DarkRaspberry);
 }
 .PreparationTime{
     background-color: var(--RoseWhite);
-    padding: 10px;
+    padding: 10px 30px;
+    border-radius: 10px;
 }
+span{
+    color: var(--WengeBrown);
+    font-weight: 700;
+    margin-left: 10px;
+}
+ul, ol{
+ padding-inline-start: 25px;
+}
+
+li{
+    margin: 10px 0px 5px 0px;
+}
+
+ol li::marker, ul li::marker{
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+.PreparationTime ul li::marker{
+    color: var(--DarkRaspberry); 
+}
+table{
+border-collapse: collapse;
+width: 100%;
+ }
+td{
+    border-bottom: 1px solid var(--LightGrey);
+    padding: 15px 0px 15px 30px;
+}
+
+.rightCell{
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+
+
 
 footer{
    margin: 4% 0% 2% 0%; 
